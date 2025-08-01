@@ -1,0 +1,134 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Du lịch Cá nhân hóa</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'app/css/style.css' %}">
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Smart Travel AI</a>
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link active" href="#">Trang chủ</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Tính năng</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Đăng nhập</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Banner -->
+<section class="bg-primary text-white text-center py-5">
+  <div class="container">
+    <h1 class="display-4">Cá nhân hóa chuyến đi của bạn với AI</h1>
+    <p class="lead">Khám phá – Lên lịch – Tối ưu hóa hành trình một cách thông minh</p>
+    <a href="#form" class="btn btn-light btn-lg mt-3">Bắt đầu ngay</a>
+  </div>
+</section>
+
+<!-- Form nhập thông tin -->
+<section id="form" class="py-5">
+  <div class="container">
+    <h2 class="mb-4">Lên kế hoạch du lịch thông minh</h2>
+    <form>
+      <div class="row g-3">
+        <div class="col-md-4">
+          <label class="form-label">Sở thích</label>
+          <select class="form-select">
+            <option>Văn hóa</option>
+            <option>Phiêu lưu</option>
+            <option>Nghỉ dưỡng</option>
+          </select>
+        </div>
+        <div class="col-md-4">
+          <label class="form-label">Ngân sách (VND)</label>
+          <input type="number" class="form-control" placeholder="VD: 10.000.000">
+        </div>
+        <div class="col-md-4">
+          <label class="form-label">Thời gian (ngày)</label>
+          <input type="number" class="form-control" placeholder="VD: 5">
+        </div>
+      </div>
+      <button type="submit" class="btn btn-primary mt-4">Tìm điểm đến</button>
+    </form>
+  </div>
+</section>
+
+<!-- Gợi ý nổi bật -->
+<section class="bg-light py-5">
+  <div class="container">
+    <h2 class="mb-4 text-center">Điểm đến gợi ý</h2>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card shadow-sm">
+          <img src="{% static 'app/images/da_nang.jpg' %}" class="card-img-top" alt="Đà Nẵng">
+          <div class="card-body">
+            <h5 class="card-title">Đà Nẵng</h5>
+            <p class="card-text">Thành phố biển năng động với cảnh quan tuyệt đẹp và ẩm thực phong phú.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card shadow-sm">
+          <img src="{% static 'app/images/sapa.jpg' %}" class="card-img-top" alt="Sa Pa">
+          <div class="card-body">
+            <h5 class="card-title">Sa Pa</h5>
+            <p class="card-text">Trải nghiệm khí hậu mát mẻ, núi non trùng điệp và văn hóa bản địa độc đáo.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card shadow-sm">
+          <img src="{% static 'app/images/phu_quoc.jpg' %}" class="card-img-top" alt="Phú Quốc">
+          <div class="card-body">
+            <h5 class="card-title">Phú Quốc</h5>
+            <p class="card-text">Thiên đường biển đảo với resort sang trọng và hoàng hôn tuyệt đẹp.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Giới thiệu tính năng -->
+<section class="py-5">
+  <div class="container">
+    <h2 class="text-center mb-5">Tính năng nổi bật</h2>
+    <div class="row text-center">
+      <div class="col-md-4">
+        <h4>Gợi ý thông minh</h4>
+        <p>Sử dụng AI để phân tích sở thích và gợi ý điểm đến phù hợp nhất.</p>
+      </div>
+      <div class="col-md-4">
+        <h4>Chatbot hỗ trợ</h4>
+        <p>Trò chuyện với chatbot để được tư vấn, hỗ trợ và cập nhật kế hoạch theo thời gian thực.</p>
+      </div>
+      <div class="col-md-4">
+        <h4>Tích hợp bản đồ</h4>
+        <p>Hiển thị lộ trình và các điểm đến trực quan trên bản đồ tương tác.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-dark text-white text-center py-4">
+  <div class="container">
+    <p>© 2025 Smart Travel AI. All rights reserved.</p>
+  </div>
+</footer>
+
+<!-- Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
